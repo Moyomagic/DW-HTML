@@ -1,0 +1,186 @@
+<style>
+  /* SPACING SYSTEM (px) 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+    FONT SIZE SYSTEM (px) 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62
+    / 74 / 86 / 98 */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  table {
+    width: 800px;
+    margin: 20 auto;
+    /*border: 1px solid #343a40;*/
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    /*border: 1px solid #343a40;*/
+    padding: 16px 24px;
+    text-align: left;
+  }
+  thead th {
+    background-color: #ffd8a8;
+    width: 25%;
+  }
+  tbody tr:nth-child(odd) {
+    background-color: #fff4e6;
+  }
+  tbody tr:nth-child(even) {
+    background-color: #ffe8cc;
+  }
+  .pagination {
+    width: 300px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .pg-icons {
+    width: 18px;
+  }
+  .pag-icon {
+    background-color: #fff;
+    border: 1px solid #ffd8a8;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+  }
+  .btns {
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border: 1px solid #ffd8a8;
+    border-radius: 50%;
+  }
+  a .pag-icon:link {
+    background-color: #fff;
+    border: none;
+  }
+  a .pag-icon:hover {
+    background-color: #ffd8a8;
+    border: 1px solid #ffd8a8;
+    cursor: pointer;
+  }
+  a .btns {
+    border: none;
+  }
+  a .btns:hover {
+    background-color: #ffd8a8;
+    border: 1px solid #ffd8a8;
+    cursor: pointer;
+  }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat+Alternates:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-link"><a href="#">+2348056213958</a></div>
+      <div class="nav-link"><a href="index.html">Home</a></div>
+      <div class="nav-link"><a href="Menu-Table.html">Menu</a></div>
+      <div class="nav-link"><a href="#">Moments</a></div>
+      <div class="nav-link"><a href="FAQS.html">FAQS</a></div>
+      <div class="nav-link"><a href="#">Contacts</a></div>
+    </nav>
+    <table>
+      <thead>
+        <tr>
+          <th>Chair</th>
+          <th>The laid back</th>
+          <th>The worker bee</th>
+          <th>The chair</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>width</th>
+          <td>80cm</td>
+          <td>60cm</td>
+          <td>220cm</td>
+        </tr>
+        <tr>
+          <th>height</th>
+          <td>100cm</td>
+          <td>110cm</td>
+          <td>90cm</td>
+        </tr>
+        <tr>
+          <th>depth</th>
+          <td>70cm</td>
+          <td>65cm</td>
+          <td>80cm</td>
+        </tr>
+        <tr>
+          <th>weight</th>
+          <td>16kg</td>
+          <td>22kg</td>
+          <td>80kg</td>
+        </tr>
+      </tbody>
+    </table>
+    <!--Pagination-->
+    <div class="pagination">
+      <a>
+        <button class="pag-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="pg-icons"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5L8.25 12l7.5-7.5"
+            />
+          </svg></button
+      ></a>
+
+      <a href="#"><button class="btns">1</button></a>
+      <a href="#"><button class="btns">2</button></a>
+      <a href="#"><button class="btns">3</button></a>
+      <a href="#"><button class="btns">4</button></a>
+      <a href="#"><button class="btns">5</button></a>
+      <a href="#"><button class="btns">...</button></a>
+      <a href="#"><button class="btns">23</button></a>
+
+      <a
+        ><button class="pag-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="pg-icons"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M8.25 4.5l7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </button>
+      </a>
+    </div>
+  </body>
+</html>
